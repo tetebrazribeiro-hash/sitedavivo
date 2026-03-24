@@ -1,0 +1,60 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    /* espaçamento em volta zerando */
+    padding: 0;
+    /* resetando */
+    box-sizing: border-box;
+    /* Evita que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade */
+
+}
+
+.cabecalho {
+    background-color: black;
+    /* Cor de fundo */
+    color: white;
+    padding: 1, 5rem;
+    /* poderia ser 24px */
+    /* alinhamento dos itens */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+
+    /*Header Fixo */
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    /* eixo-z - Profendidade do elemento */
+}
+
+.div-logo img {
+    width: 100%;
+    /*usando o % para diminuir seu tamanho */
+}
+
+/* estilização do botão header */
+.div-button a button {
+    width: 5rem;
+    /* poderia ser 80px */
+    padding: 0.5rem;
+    /* 8px -preenchimento */
+    background-color: antiquewhite;
+    /* cor de fundo */
+    border: none;
+    /* remoção de bordas */
+    font-weight: 700;
+    /*espessura da font do botão */
+    border-radius: 5px;
+    /*arredondamento da borda */
+}
+
+.section {
+    padding: 9rem; /* preenchimento interno da section */
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
