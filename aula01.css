@@ -1,15 +1,20 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0; /* espaçamento em volta zerando */
-    padding: 0; /* resetando */
-    box-sizing: border-box; /* Evita que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade */
+    margin: 0;
+    /* espaçamento em volta zerando */
+    padding: 0;
+    /* resetando */
+    box-sizing: border-box;
+    /* Evita que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade */
 
 }
 
 .cabecalho {
-    background-color: purple; /* Cor de fundo */
+    background-color: purple;
+    /* Cor de fundo */
     color: white;
-    padding: 1.5rem;/* poderia ser 24px */
+    padding: 1.5rem;
+    /* poderia ser 24px */
     /* alinhamento dos itens*/
     display: flex;
     align-items: center;
@@ -21,51 +26,106 @@
     position: sticky;
     left: 0;
     top: 0;
-    z-index: 999; /* eixo-z - Profundidade do elemento */
+    z-index: 999;
+    /* eixo-z - Profundidade do elemento */
 }
 
 .div-logo img {
-    width: 20%; /*usando o % para diminuir seu tamanho */
+    width: 20%;
+    /*usando o % para diminuir seu tamanho */
 }
 
 /* estilização do botão header */
 .div-button a button {
-    width: 1rem; /* poderia ser 50px */
-    padding: 0.5rem; /* 8px -preenchimento */
-    background-color: antiquewhite; /* cor de fundo */
-    border: none; /* remoção de bordas */
-    font-weight: 800; /*espessura da font do botão */
-    border-radius: 5px; /*arredondamento da borda */
+    width: 1rem;
+    /* poderia ser 50px */
+    padding: 0.5rem;
+    /* 8px -preenchimento */
+    background-color: antiquewhite;
+    /* cor de fundo */
+    border: none;
+    /* remoção de bordas */
+    font-weight: 800;
+    /*espessura da font do botão */
+    border-radius: 5px;
+    /*arredondamento da borda */
 }
 
 .section-01 {
-    padding: 9rem; /* preenchimento interno da section */
+    padding: 9rem;
+    /* preenchimento interno da section */
     background-image: url(roxo.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    /*alinhamento vertical */
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    /* alinhamento vertical */
+    justify-content: center;
+    /* alinhamento horizontal */
+    gap: 2rem;
+    /* poderíamos usar 32px */
+    flex-wrap: wrap;
+    /*Isso significa que as div poderão quebrar a linha, caso necessário */
 }
 
 .div01 {
-    background-color: plum; /*cor de fundo */
-    color: black; /*cor dos textos */
-    text-align: center; /*Alinhamento centralizado dos textos  */
-    font-size: 2rem;  /* tamanho da letra  dentro da caixa */
-    padding: 1rem; /*preenchimento da caixa */
-    width: 25%;/* largura de caixa caixa em porcentagem */
-    height: 50rem;  /* altura da caixa utilizando o REM */
-    min-width: 299px; /* Largura minima da caixa ela não ficará menor que 299px */
+    background-color: plum;
+    /*cor de fundo */
+    color: black;
+    /*cor dos textos */
+    text-align: center;
+    /*Alinhamento centralizado dos textos  */
+    font-size: 1rem;
+    /* tamanho da letra dentro da caixa*/
+    padding: 1rem;
+    /*preenchimento da caixa */
+    width: 25%;
+    /*largura da caixaem porcentagem */
+    height: 20rem;
+    /* altura da caixa utilizando o REM */
+    min-width: 299px;
+    /* Largura minima da caixa ela não ficará menor que 299px */
+}
+
+.div01 p {
+    margin-top: 1rem;
 }
 
 .div02 {
-    padding: 1rem; /* preenchimento caixa */
-    width: 25%; /* largura da caixa em porcentagem */
-    height: 20rem; /* Altura da caixa utilizando o REM */
-    min-width: 299px; /* Largura minima da caixa ela não ficará menor que 299px */
-    background-image: url();
+    padding: 1rem;
+    /* preenchimento caixa */
+    width: 25%;
+    /* largura da caixa em porcentagem */
+    height: 20rem;
+    /* Altura da caixa utilizando o REM */
+    min-width: 299px;
+    /* Largura minima da caixa ela não ficará menor que 299px */
+    background: linear-gradient(90deg, rgba(117, 42, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%) url(ima.jpg);
+    text-align: center;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    display: flex;
+    /* alinhamento dos icons */
+    align-items: center;
+    /* alinhamento vertical */
+    justify-content: center;
+    /*alinhamento horizontal */
+    flex-direction: column;
+    /*direção de caixas */
+    gap: 15px;
+    /*Espaço entre as caixas */
+    flex-wrap: wrap;
 }
 
 /* Aqui estamos estilizando as listas */
@@ -74,15 +134,51 @@
     background-color: black;
     color: aliceblue;
     padding: 4px;
-    font-size: 1.3rem;
-    border-radius: 5px; /* arredondamento da borda */
+    font-size: 1.2rem;
+    border-radius: 5px;
+    /* arredondamento da borda */
 }
 
 .ul-div01 li {
-    margin: 10px 5px; /*alterando 4 lados externos dos elementos, primeiro valor (superior, inferior) e segundo valor (laterais esquerda e direita) */
+    margin: 10px 5px;
+    /*alterando 4 lados externos dos elementos, primeiro valor (superior, inferior) e segundo valor (laterais esquerda e direita) */
 }
 
-.fa-phone,.fa-airplay-audio {
+.fa-phone,
+.fa-airplay-audio {
     color: aliceblue;
     font-size: 1.3rem;
+}
+
+/* aqui estamos utilizando a tarja em destaque entre as sections */
+.img-div {
+    padding: 45%;
+    /* preenchimento interno */
+    background-image: url(ima.jpg);
+    /* caminho da img */
+    background-position: center;
+    /* posicionamento da img */
+    background-size: cover;
+    /* preenchimento total na img na caixa */
+}
+/* Estilizando na segunda section */
+.section-02 {
+    display: flex; /*tornando flex/lado a lado */
+    justify-content: center; /*alinhamento horizontal */
+    align-items: center;  /*Alinhamento vertical */
+    gap: 1.5rem; /* brecha entre as caixas */
+    padding: 5rem; /* preenchimento interno */
+    background-color: blueviolet; /* cor de fundo */
+    flex-wrap: wrap; /*Caso necessário pode quebrar */
+}
+.caixa {
+    width: 50%; /*Largura da caixa */
+    height: 1.0rem; /* Altura da caixa */
+    background-color: aliceblue; /*cor de fundo*/
+    justify-content: center; /*alinhamento horizontal */
+    min-width: 800px;  /* largura minima da div */
+    font-size: 2rem; /* Tamanho das letras */
+    color: beige; /* cor dos textos */
+    box-shadow: 50px 70px 10px rebeccapurple; /* sombra externa das caixas */
+    cursor: pointer; /* ativando o curso pointer */
 }
