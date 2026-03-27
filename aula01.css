@@ -161,24 +161,72 @@
     background-size: cover;
     /* preenchimento total na img na caixa */
 }
+
 /* Estilizando na segunda section */
 .section-02 {
-    display: flex; /*tornando flex/lado a lado */
-    justify-content: center; /*alinhamento horizontal */
-    align-items: center;  /*Alinhamento vertical */
-    gap: 1.5rem; /* brecha entre as caixas */
-    padding: 5rem; /* preenchimento interno */
-    background-color: blueviolet; /* cor de fundo */
-    flex-wrap: wrap; /*Caso necessário pode quebrar */
+    display: flex;
+    /*tornando flex/lado a lado */
+    justify-content: center;
+    /*alinhamento horizontal */
+    align-items: center;
+    /*Alinhamento vertical */
+    gap: 1.5rem;
+    /* brecha entre as caixas */
+    padding: 5rem;
+    /* preenchimento interno */
+    background-color: blueviolet;
+    /* cor de fundo */
+    flex-wrap: wrap;
+    /*Caso necessário pode quebrar */
 }
+
 .caixa {
-    width: 50%; /*Largura da caixa */
-    height: 1.0rem; /* Altura da caixa */
-    background-color: aliceblue; /*cor de fundo*/
-    justify-content: center; /*alinhamento horizontal */
-    min-width: 800px;  /* largura minima da div */
-    font-size: 2rem; /* Tamanho das letras */
-    color: beige; /* cor dos textos */
-    box-shadow: 50px 70px 10px rebeccapurple; /* sombra externa das caixas */
-    cursor: pointer; /* ativando o curso pointer */
+    width: 50%;
+    /*Largura da caixa */
+    height: 1.0rem;
+    /* Altura da caixa */
+    background-color: aliceblue;
+    /*cor de fundo*/
+    justify-content: center;
+    /*alinhamento horizontal */
+    min-width: 800px;
+    /* largura minima da div */
+    font-size: 2rem;
+    /* Tamanho das letras */
+    color: beige;
+    /* cor dos textos */
+    box-shadow: 50px 70px 10px rebeccapurple;
+    /* sombra externa das caixas */
+    cursor: pointer;
+    /* ativando o curso pointer */
+}
+
+.caixa:hover {
+    box-shadow: 12px 12px 22px rgba(117, 42, 155, 1);
+    /* sombra externa das caixas */
+    transition: 0.8s;
+}
+
+/* estilização da section 03 */
+.section-03 {
+    display: flex;
+    /*tornando flex/lado a lado */
+    justify-content: center;
+    /*alinhamento horizontal */
+    align-items: center;
+    /*Alinhamento vertical */
+    gap: 1.5rem;
+    /* brecha entre as caixas */
+    padding: 5rem;
+    /* preenchimento interno */
+    background-color: blueviolet;
+    /* cor de fundo */
+    flex-wrap: wrap;
+    /*Caso necessário pode quebrar */
+}
+
+/*chamando as classes */
+.div03,
+.div04 {
+    height: 15rem;
 }
