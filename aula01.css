@@ -1,224 +1,342 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    /*espaçamento em volta zerado*/
-    padding: 0;
-    /*resetando preenchimento*/
-    box-sizing: border-box;
-    /* Evita que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade*/
-    list-style: none;
- }
- 
- /* estilização header */
- .cabecalho {
-    background-color: purple;
-    /*cor de fundo*/
-    color: black;
-    padding: 1.5rem;
-    /*poderia ser 24px*/
-    /* alinhamento dos itens */
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
- 
-    /* Header Fixo */
-    position: sticky;
-    /*posicionamento do header para sobrepor os outros elementos*/
-    left: 0;
-    top: 0;
-    z-index: 999;
-    /*eixo z - Profundidade do elemento*/
- }
- 
- /* Logo do header */
- .div-logo img {
-    width: 35%;
-    /*usando o % para diminuir seu tamanho*/
- }
- 
- /* estilização do botão header */
- .div-button a button {
-    width: 5rem; /*poderia ser 80 px*/
-    padding: 0.5rem; /*8px - preenchimento*/
-    background-color: #eff0d5;/*cor do botão*/
-    border: none; /*remoção das bordas*/
-    font-weight: 700; /*espessura da font do botão*/
-    border-radius: 5px; /*arredondamento da borda*/
- }
- /* estilização da section 01 */
- .section-01 {
-    padding: 5rem; /*preechimento interno da section*/
-    background-image: url(roxo.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
- 
-    display: flex;
-    align-items: center;/*alinhamento vertical*/
-    justify-content: center; /*Alinhamento horizontal*/
-    gap: 2rem; /*poderíamos usar 32px*/
-    flex-wrap: wrap; /*Isso significa que as div poderão quebrar de linha, caso necessário*/
- }
- 
- .div01 {
- background-color: mediumpurple; /*cor de fundo*/
- color: #171430;/*cor dos textos*/
- font-weight: bold; /*peso da fonte*/
- text-align: center; /*Alinhamento centralizado dos textos*/
- font-size: 2rem; /*tamanho da letra dentro da caixa*/
- padding: 1rem; /*preenchimento da caixa*/
- width: 25%;/*largura de caixa em porcentagem*/ 
- height: 20rem; /*altura da caixa utilizando o REM*/
- min-width: 299px; /*Largura mínima da caixa 
- ela não ficará menor que 299px*/
- }
- 
- .div01 p {
-    margin-top: 1rem;
- }
- 
- /* Aqui estamos estilizando as listas */
- .ul-div01 li a {
-  text-decoration: none;
-  background-color: darkorchid;
-  color: white;
-  padding: 5px;
-  font-size: 1.2rem;
-  border-radius: 5px; /*arredondamento da borda*/
- }
- 
- .ul-div01 li {
-    margin: 5px 5px; /*alterando os 4 lados externos dos elementos, primeiro valor (superior,inferior) e segundo valor (laterais esquerda e direita)*/
- }
- 
- 
- .div02 {
-    padding: 1rem; /*preenchimento da caixa*/
-    width: 25%;/*largura de caixa em porcentagem*/ 
-    height: 20rem; /*altura da caixa utilizando o REM*/
-    min-width: 299px; /*Largura mínima da caixa*/
-    background: linear-gradient(180deg, #01021064 8.33%, rgba(7, 15, 28, 0.745) 100%), url(../imagens/bank2.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex; /*alinhamento dos icons*/
-    align-items: center; /*alinhamento vertical*/
-    justify-content: center; /*alinhamento horizontal*/
-    flex-direction: column; /*direção das caixas*/
-    gap: 15px; /*Espaço entre as caixas*/
- }
- 
- 
- .fa-phone, .fa-music {
-    color: white;
-    font-size: 1.3rem;
- }
- /* Aqui estamos estilizando a tarja em destaque entre as sections */
- .img-div {
-    padding: 3%; /*preenchimento interno*/
-    background-image: url(../imagens/papel.jpg);/*caminho da img*/
-    background-position: center; /*posicionamento da img*/
-    background-size: cover;/*preenchimento total da img na caixa*/
- }
- /* Estilizando a segunda section */
- .section-02 {
-    display: flex; /*tornando flex/lado a lado*/
-    justify-content: center; /*alinhamento horizontal*/
-    align-items: center; /*Alinhamento vertical*/
-    gap: 1.5rem; /*brecha entre as caixas*/
-    padding: 5rem; /*preenchimento interno */
-    background-color: rebeccapurple; /*Cor de fundo*/
-    flex-wrap: wrap; /*CASO NECESSÁRIO VOCÊ PODERÁ QUEBRAR*/
- }
- 
- /* estilização das 3 div sec 2 */
- .caixa {
-    width: 25%; /*Largura da caixa*/
-    height: 22rem; /*altura da caixa*/
-    background-color: white; /*cor de fundo*/
-    min-width: 299px; /*largura mínima da div*/
-    font-size: 1.2rem; /*Tamanho das letras*/
-    color: black; /*cor dos textos*/
-    box-shadow: 10px 10px 20px rgba(245, 222, 179, 0.354); /*sombra externa das caixas*/
-    cursor: pointer; /* ativando cursor pointer */
- }
- 
- .caixa:hover{
-    box-shadow: 12px 12px 22px rgba(245, 222, 179, 0.557); /*sombra externa das caixas*/
-    transition: 0.8s;
- }
- 
- /* estilização da section 03 */
- .section-03 {
-    display: flex; /*tornando flex/lado a lado*/
-    justify-content: center; /*alinhamento horizontal*/
-    align-items: center; /*Alinhamento vertical*/
-    gap: 1.5rem; /*brecha entre as caixas*/
-    padding: 5rem; /*preenchimento interno */
-    background-color: #171430; /*Cor de fundo*/
-    flex-wrap: wrap; /*CASO NECESSÁRIO VOCÊ PODERÁ QUEBRAR*/
- }
- /* Chamando as classes primárias para estilização */
-  .div03, .div04 {
-    height: 15rem; /*altura das caixas*/
-    padding: 1rem; /*preenchimento interno*/
-    text-align: center;
- } 
- /* Estilização dos textos da primeira caixa */
- .content-text {
-    text-align: start; /*Alinhando os textos ao início*/
-    margin: 1rem; /*espaçamento em torno da caixa*/
-    color: #171430; /*cor dos textos*/
-    font-weight: 500; /*peso da font*/
- }
- /* Acessando os icons para estilização */
- .icon-div03 i {
-    color: purple; /*cores dos icon*/
-    font-size: 2.8rem; /*tamanho dos icon*/
-    margin-top: 1.2rem; /*Espaçamento superior dos icon*/
- }
- 
- 
- /* inicio formatação caixa 02 section 03 */
- .button-div04 a button {
-    padding: 0.5rem; /*preenchimento interno button*/
-    background-color: purple; /*cor de fundo*/
-    color: white; /*cor do text*/
-    font-weight: 600; /*peso da font*/
-    margin: 1rem 0; /*espaçamento sup/inf 1rem, e 0 nas laterais */
- }
- 
- .text-div04 p {
-    color: #171430;
- }
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   /*espaçamento em volta zerado*/
+   padding: 0;
+   /*resetando preenchimento*/
+   box-sizing: border-box;
+   /* Evita que os elementos aumente de tamanho inesperadamente facilitando o controle da responsividade*/
+   list-style: none;
+}
 
- /* inicio da estilização rodapé */
- .rodape {
-   background-color: black;  /* cor de fundo do rodapé */
-   padding: 2rem; /* 32px */
-   text-align: center; /* alinhando o texto centro */
-   font-size: 1.1rem;  /* definindo o texto no text */
- }
-   .content {
-      display: flex; /* Flex box / lado a lado */
-      align-items: center; /* alinhamento vertical */
-      justify-content: center;  /* alinhamento horizontal */
-      gap: 3rem; /* espaçamento dos elementos */
-      flex-wrap: wrap; /* quebra de caixas */
-   }
-   /*espaçamento nas div que guarda os icon */
-   .social-media {
-      padding: 1.5rem;
-   }
-   /*estilizando os icon */
-   .social-media i {
-      color: beige; /* cor dos icon */
-font-size: 2rem;/* 32px |Tamanho dos icon  */
-margin: 0.5rem; /* espaçamento em volta dos icon (4 lados) */
-   }
-   /* linha divisão nas linhas principais */
-   .line {
-      width: 60%;
-      margin: 0.5rem auto; /*espaçamento em torno das linha superior e inferior (0.5rem) com as laterais automáticas (navegador) */
-   }
+/* estilização header */
+.cabecalho {
+   background-color: purple;
+   /*cor de fundo*/
+   color: black;
+   padding: 1.5rem;
+   /*poderia ser 24px*/
+   /* alinhamento dos itens */
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   flex-direction: row;
+
+   /* Header Fixo */
+   position: sticky;
+   /*posicionamento do header para sobrepor os outros elementos*/
+   left: 0;
+   top: 0;
+   z-index: 999;
+   /*eixo z - Profundidade do elemento*/
+}
+
+/* Logo do header */
+.div-logo img {
+   width: 35%;
+   /*usando o % para diminuir seu tamanho*/
+}
+
+/* estilização do botão header */
+.div-button a button {
+   width: 5rem;
+   /*poderia ser 80 px*/
+   padding: 0.5rem;
+   /*8px - preenchimento*/
+   background-color: #eff0d5;
+   /*cor do botão*/
+   border: none;
+   /*remoção das bordas*/
+   font-weight: 700;
+   /*espessura da font do botão*/
+   border-radius: 5px;
+   /*arredondamento da borda*/
+}
+
+/* estilização da section 01 */
+.section-01 {
+   padding: 5rem;
+   /*preechimento interno da section*/
+   background-image: url(roxo.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+   display: flex;
+   align-items: center;
+   /*alinhamento vertical*/
+   justify-content: center;
+   /*Alinhamento horizontal*/
+   gap: 2rem;
+   /*poderíamos usar 32px*/
+   flex-wrap: wrap;
+   /*Isso significa que as div poderão quebrar de linha, caso necessário*/
+}
+
+.div01 {
+   background-color: mediumpurple;
+   /*cor de fundo*/
+   color: #171430;
+   /*cor dos textos*/
+   font-weight: bold;
+   /*peso da fonte*/
+   text-align: center;
+   /*Alinhamento centralizado dos textos*/
+   font-size: 2rem;
+   /*tamanho da letra dentro da caixa*/
+   padding: 1rem;
+   /*preenchimento da caixa*/
+   width: 25%;
+   /*largura de caixa em porcentagem*/
+   height: 20rem;
+   /*altura da caixa utilizando o REM*/
+   min-width: 299px;
+   /*Largura mínima da caixa 
+ ela não ficará menor que 299px*/
+}
+
+.div01 p {
+   margin-top: 1rem;
+}
+
+/* Aqui estamos estilizando as listas */
+.ul-div01 li a {
+   text-decoration: none;
+   background-color: darkorchid;
+   color: white;
+   padding: 5px;
+   font-size: 1.2rem;
+   border-radius: 5px;
+   /*arredondamento da borda*/
+}
+
+.ul-div01 li {
+   margin: 5px 5px;
+   /*alterando os 4 lados externos dos elementos, primeiro valor (superior,inferior) e segundo valor (laterais esquerda e direita)*/
+}
+
+
+.div02 {
+   padding: 1rem;
+   /*preenchimento da caixa*/
+   width: 25%;
+   /*largura de caixa em porcentagem*/
+   height: 20rem;
+   /*altura da caixa utilizando o REM*/
+   min-width: 299px;
+   /*Largura mínima da caixa*/
+   background: linear-gradient(180deg, #01021064 8.33%, rgba(7, 15, 28, 0.745) 100%), url(../imagens/bank2.jpg);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   /*alinhamento dos icons*/
+   align-items: center;
+   /*alinhamento vertical*/
+   justify-content: center;
+   /*alinhamento horizontal*/
+   flex-direction: column;
+   /*direção das caixas*/
+   gap: 15px;
+   /*Espaço entre as caixas*/
+}
+
+
+.fa-phone,
+.fa-music {
+   color: white;
+   font-size: 1.3rem;
+}
+
+/* Aqui estamos estilizando a tarja em destaque entre as sections */
+.img-div {
+   padding: 3%;
+   /*preenchimento interno*/
+   background-image: url(../imagens/papel.jpg);
+   /*caminho da img*/
+   background-position: center;
+   /*posicionamento da img*/
+   background-size: cover;
+   /*preenchimento total da img na caixa*/
+}
+
+/* Estilizando a segunda section */
+.section-02 {
+   display: flex;
+   /*tornando flex/lado a lado*/
+   justify-content: center;
+   /*alinhamento horizontal*/
+   align-items: center;
+   /*Alinhamento vertical*/
+   gap: 1.5rem;
+   /*brecha entre as caixas*/
+   padding: 5rem;
+   /*preenchimento interno */
+   background-color: rebeccapurple;
+   /*Cor de fundo*/
+   flex-wrap: wrap;
+   /*CASO NECESSÁRIO VOCÊ PODERÁ QUEBRAR*/
+}
+
+/* estilização das 3 div sec 2 */
+.caixa {
+   width: 25%;
+   /*Largura da caixa*/
+   height: 22rem;
+   /*altura da caixa*/
+   background-color: white;
+   /*cor de fundo*/
+   min-width: 299px;
+   /*largura mínima da div*/
+   font-size: 1.2rem;
+   /*Tamanho das letras*/
+   color: black;
+   /*cor dos textos*/
+   box-shadow: 10px 10px 20px rgba(245, 222, 179, 0.354);
+   /*sombra externa das caixas*/
+   cursor: pointer;
+   /* ativando cursor pointer */
+}
+
+.caixa:hover {
+   box-shadow: 12px 12px 22px rgba(245, 222, 179, 0.557);
+   /*sombra externa das caixas*/
+   transition: 0.8s;
+}
+
+/* estilização da section 03 */
+.section-03 {
+   display: flex;
+   /*tornando flex/lado a lado*/
+   justify-content: center;
+   /*alinhamento horizontal*/
+   align-items: center;
+   /*Alinhamento vertical*/
+   gap: 1.5rem;
+   /*brecha entre as caixas*/
+   padding: 5rem;
+   /*preenchimento interno */
+   background-color: #171430;
+   /*Cor de fundo*/
+   flex-wrap: wrap;
+   /*CASO NECESSÁRIO VOCÊ PODERÁ QUEBRAR*/
+}
+
+/* Chamando as classes primárias para estilização */
+.div03,
+.div04 {
+   height: 15rem;
+   /*altura das caixas*/
+   padding: 1rem;
+   /*preenchimento interno*/
+   text-align: center;
+}
+
+/* Estilização dos textos da primeira caixa */
+.content-text {
+   text-align: start;
+   /*Alinhando os textos ao início*/
+   margin: 1rem;
+   /*espaçamento em torno da caixa*/
+   color: #171430;
+   /*cor dos textos*/
+   font-weight: 500;
+   /*peso da font*/
+}
+
+/* Acessando os icons para estilização */
+.icon-div03 i {
+   color: purple;
+   /*cores dos icon*/
+   font-size: 2.8rem;
+   /*tamanho dos icon*/
+   margin-top: 1.2rem;
+   /*Espaçamento superior dos icon*/
+}
+
+
+/* inicio formatação caixa 02 section 03 */
+.button-div04 a button {
+   padding: 0.5rem;
+   /*preenchimento interno button*/
+   background-color: purple;
+   /*cor de fundo*/
+   color: white;
+   /*cor do text*/
+   font-weight: 600;
+   /*peso da font*/
+   margin: 1rem 0;
+   /*espaçamento sup/inf 1rem, e 0 nas laterais */
+}
+
+.text-div04 p {
+   color: #171430;
+}
+
+/* inicio da estilização rodapé */
+.rodape {
+   background-color: black;
+   /* cor de fundo do rodapé */
+   padding: 2rem;
+   /* 32px */
+   text-align: center;
+   /* alinhando o texto centro */
+   font-size: 1.1rem;
+   /* definindo o texto no text */
+}
+
+.content {
+   display: flex;
+   /* Flex box / lado a lado */
+   align-items: center;
+   /* alinhamento vertical */
+   justify-content: center;
+   /* alinhamento horizontal */
+   gap: 3rem;
+   /* espaçamento dos elementos */
+   flex-wrap: wrap;
+   /* quebra de caixas */
+   margin-bottom: 1.5rem;
+}
+
+/*espaçamento nas div que guarda os icon */
+.social-media {
+   padding: 1.5rem;
+}
+
+/*estilizando os icon */
+.social-media i {
+   color: beige;
+   /* cor dos icon */
+   font-size: 2rem;
+   /* 32px |Tamanho dos icon  */
+   margin: 0.5rem;
+   /* espaçamento em volta dos icon (4 lados) */
+}
+
+/* linha divisão nas linhas principais */
+.line {
+   width: 60%;
+   margin: 0.5rem auto;
+   /*espaçamento em torno das linha superior e inferior (0.5rem) com as laterais automáticas (navegador) */
+   background-color: brown;
+   /* cor de fundo do hr */
+   border: none;
+   /* remover as bordas por padrão */
+   height: 2px;
+   /* devinir a altura da linha */
+}
+
+.div-list ul li a {
+   color: aliceblue;
+   text-decoration: none;
+}
+
+.div-list ul li {
+   margin-bottom: 0.7rem;
+}
+
+.div-list ul a:hover{
+   color: ghostwhite;
+   transition: 0.8s;
+}
