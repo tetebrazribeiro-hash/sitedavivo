@@ -340,3 +340,8 @@
    color: ghostwhite;
    transition: 0.8s;
 }
+@media  (max-width: 600px) {
+   .content {
+      flex-direction: column;
+   }
+}
