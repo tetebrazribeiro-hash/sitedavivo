@@ -1,45 +1,50 @@
-*{
+
+
+
+* {
     margin: 0;
     padding: 0;
-    box-shadow: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
-    height: 100vh; /*estamos dizendo ao body que queremos a altura completa (100vh)*/
+body {
+    height: 100vh; /* Estamos dizendo ao body que queremos a altura completa 100% */
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #171430, white);
+    background: linear-gradient(135deg, #171430,  white);
 }
+
 
 .google-btn img {
     width: 20px;
 }
-    
-.Container {
+
+.container {
     background-color: white;
     padding: 2rem;
     border-radius: 15px;
     width: 100%;
-    max-width: 400px; /*Define a largura máxima do container em 400px */
+    max-width: 400px; /* Definie a largura máxima do container em 400px */
     box-shadow: 0 10px 25px black;
 }
 
 h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #171430;
+    color: black;
 }
 
 .input-group {
-margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
 
-.input-group label{
-    display: block; /*Mantendo o comportamento do elemento em bloco () */
+.input-group label {
+    display: block; /* Mantendo o compartamento do elemento em bloco () */
     margin-bottom: 5px;
-    color: grey;
+    color: #555;
+    
 }
 
 .input-group input {
@@ -47,18 +52,18 @@ margin-bottom: 1rem;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    outline: none; /*Remove o contorno(borda extrema) do elemento */
+    outline: none; /* remove o contorno (borda externa) do elemento */
     transition: 0.3s;
 }
 
-.input-group input:focus {
+.input-group input:focus{
     border-color: #171430;
     box-shadow: 0 0 5px #555;
 }
 
 .links {
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     gap: 15px;
     font-size: 0.9rem;
     margin-bottom: 1rem;
@@ -69,12 +74,13 @@ margin-bottom: 1rem;
     color: #171430;
 }
 
-.links a:hover {
+.links a:hover{
     text-decoration: underline;
+
 }
 
-.btn{
-    width: 100px;
+.btn {
+    width: 100%;
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -82,7 +88,8 @@ margin-bottom: 1rem;
     color: white;
     font-size: 1rem;
     cursor: pointer;
-    transition: 0,3s;
+    transition: 0.3s;
+
 }
 
 .btn:hover {
@@ -90,7 +97,7 @@ margin-bottom: 1rem;
     color: #171430;
 }
 
-.google-btn {
+.google-btn{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,20 +105,23 @@ margin-bottom: 1rem;
     width: 100%;
     padding: 10px;
     border-radius: 8px;
-   border: 1px solid #ccc;
-   cursor: pointer;
-   transition: 0.3s;
-   background-color: white;
-   margin-top: 1rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: white;
+    margin-top: 1rem;
 }
 
 .google-btn:hover {
-background-color: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
 @media (max-width: 480px) {
-.Container {
-    margin: 1rem;
-    padding: 1.5rem;
+    .container {
+        margin: 0.2rem;
+        padding: 1rem;
+    }
 }
-}
+
+
+
